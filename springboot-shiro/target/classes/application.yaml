@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://101.132.174.238:3306/shiro?characterEncoding=utf-8&serverTimezone=UTC&useSSL=false
+    username: root
+    password: 123456
+  redis:
+    host: 101.132.174.238
+    port: 6379
+    database: 1
+
