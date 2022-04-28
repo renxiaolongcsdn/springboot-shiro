@@ -79,5 +79,14 @@ public class ShiroConfig {
         return customerRealm;
     }
 
+    
+    @Bean
+    public static DefaultAdvisorAutoProxyCreator getDefaultAdvisorAutoProxyCreator(){
+
+        DefaultAdvisorAutoProxyCreator defaultAdvisorAutoProxyCreator=new DefaultAdvisorAutoProxyCreator();
+        defaultAdvisorAutoProxyCreator.setUsePrefix(true);
+
+        return defaultAdvisorAutoProxyCreator;
+    }
 
 }
